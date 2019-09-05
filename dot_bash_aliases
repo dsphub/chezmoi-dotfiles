@@ -1,0 +1,100 @@
+# Default text editor
+export EDITOR="vim"
+
+# Edit configs
+alias ebrc='vim ~/.bashrc'
+alias eba='vim .bash_aliases'
+alias ea='vim .aliases'
+
+# History most used commands
+#history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10 
+
+alias h='history'
+alias hg='history | grep'
+
+# Alias
+alias aliases='cat ~/.bash_aliases'
+alias al=aliases
+alias alg='cat ~/.bash_aliases | grep'
+
+alias alias-edit='vim ~/.bash_aliases'
+alias alias-vim='vim ~/.bash_aliases'
+alias ale=alias-edit
+alias ali=alias-edit
+
+alias alias-update='source ~/.bash_aliases'
+alias alias-source='source ~/.profile'
+alias alu=alias-update
+
+alias alias-grep='alias|grep'
+alias alg=alias-grep
+
+# Ubuntu specific config
+if [ $(uname) == "Linux" ]; then
+	alias afk=xflock4
+
+	# Apt
+	alias apt-get='sudo apt-get'
+	alias apt-search='apt-get search'
+	alias update='sudo apt-get update'
+	alias upgrade='sudo apt-get upgrade'
+	alias apt-upgrade="sudo apt-get update && sudo apt-get upgrade"
+fi
+
+# Copy pwd to clipboard
+alias cpwd='pwd | xclip -selection clipboard'
+
+# File System
+alias ~='cd ~'
+alias -- -='cd -'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias j.='cd ~/ws/dotfiles/' # Open dotfiles git repos
+alias jws='cd ~/ws' # Open workspace
+
+mcd () {
+    mkdir -p $1
+    cd $1
+}
+alias mkdir='mkdir -pv'
+
+alias l='ls -lhF' # show human readable size and add file type indicator (by default "/" for dirs)
+alias lg='ls -lhAF|grep'
+alias la='ls -lhAF'
+alias ll=la
+alias lll='ls -lhAFR|less'
+#alias ld='ls -lA|grep ^d' # dirs only
+
+alias df='df -h' # human readable output
+alias dfh='df -h'
+
+alias du='du -h'
+alias duh='du -h'
+
+alias lc='wc -l'
+
+alias mount='mount |column -t' # Add human readable format
+
+# System
+alias ps-grep='ps axu|grep ' # e.g. "ps-grep java" will list processes that have java in name or description
+
+alias k9='kill -9'
+
+alias jobs='jobs -l'
+
+alias sd='shutdown'
+alias sdc='shutdown -c'
+
+# Network
+alias wtf='ping 8.8.8.8'
+alias wget='wget -c'
+alias myip='curl http://ipecho.net/plain; echo'
+alias ports='netstat -tulanp' # Show open ports
+
+# check that use is not root
+if [ $UID -ne 0 ]; then
+	# System
+	alias reboot='sudo reboot'
+fi

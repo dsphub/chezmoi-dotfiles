@@ -1,0 +1,137 @@
+alias vi='vim'
+
+# bash git promt
+# https://github.com/magicmonty/bash-git-prompt
+
+# Git short
+alias g='git'
+
+alias gi='git init'
+alias gs='git status'
+alias gd='git status && git diff'
+alias gdc='git status && git diff --cached'
+
+alias gw='git show'
+alias gls='git ls-files'
+alias gcls='git show --pretty="" --name-only'
+
+alias gb='git branch '
+alias gbr='git branch -r'
+alias gbd='git branch -d '
+alias gbD='git branch -D '
+alias gco='git checkout '
+alias gcob='git checkout -b '
+alias gcom='git checkout master'
+alias gfco='gi fetch && git checkout '
+
+alias ga='git add '
+alias ga.='git add . && git status'
+alias gac='git add . && git commit -m '
+alias gaa='git add . && git commit --amend'
+alias gap='git add -p '
+alias grh='git reset HEAD '
+alias grhH='git reset --hard HEAD'
+
+alias gc='git commit -m '
+alias gca='git commit --amend'
+
+alias gcp='git cherry-pick'
+
+alias gtt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+alias gt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n10"
+alias gt2="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n20"
+alias gt3="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n30"
+alias gt4="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n40"
+alias gtom="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n10 master..origin/master"
+alias gto="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n10 $(git rev-parse --abbrev-ref HEAD)..origin/$(git rev-parse --abbrev-ref HEAD)"
+
+alias gp='git push origin $(git rev-parse --abbrev-ref HEAD)'
+alias gpo='git push origin '
+alias gpom='git push origin master'
+alias gpu='git push -u origin master'
+
+alias gl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
+alias glom='git pull origin master'
+
+alias gf='git fetch --all'
+alias gfr='git fetch --all && git rebase '
+alias gfro='git fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
+alias gfrom='git fetch --all && git rebase origin/master'
+
+alias gdom='git diff origin/master'
+alias grim='git rebase -i master'
+
+alias gcl='git config --list'
+alias gal='git config --list'
+
+alias gg='git tag ' # add test
+alias ggd='git tag -d ' # remove local tag
+alias ggdo='git push origin --delete ' # remove remote tag
+alias ggpo='git push origin --tags' # push all tags
+alias gdt='git describe --tags' # last tag
+alias ggt='git describe --tags' # last tag
+
+alias grso='git remote show origin'
+
+alias gh='git stash'
+alias gha='git stash apply'
+alias ghl='git stash list'  #show stashed modifications
+alias ghls='git stash show'  #show files changed in the last stash
+alias ghw='git stash show -p'  #show content of the last stash
+#alias ghn='git stash show -p stash@{1}'  #show content of the most recent stash
+
+# Git long
+alias git-show='git show'
+alias git-files='git ls-files'
+alias git-commit-files='git show --pretty="" --name-only'
+
+alias git-up='cd `git rev-parse --show-toplevel`'
+
+#alias redate=rebase --committer-date-is-author-date
+
+alias gfirst='git add . && git commit -m "Initial commit" && git push -u origin master'
+
+alias git-draft='git add . && git commit -m "Update"'
+alias gdraft=git-draft
+#alias gdr=git-draft
+alias git-show-draft='git add . && git commit -m "Update" && git show'
+alias gdr='git add . && git commit -m "Update" && git show'
+
+alias git-lazy="git add . && git commit -a -m '$1' && git push -u origin master"
+alias git-lazy-push='git add . && git commit -m "Update" && git push origin master'
+alias glp=git-lazy-push
+alias glu=git-lazy-push
+
+# Enable tab completion for `g` by marking it as an alias for `git`
+if type _git &> /dev/null; then
+	complete -o default -o nospace -F _git g;
+fi;
+
+# Docker
+alias docker-start='sudo service docker start'
+alias docker-status='sudo service docker status'
+alias docker-stop='sudo service docker stop'
+
+alias dk='docker'
+alias dm='docker-machin'
+alias dc='docker-compose'
+alias dn='docker network'
+
+# Golang
+alias gob='go build ./...'
+alias got='go test ./...'
+alias gof='go fmt ./...'
+
+# Calculator
+alias bc='bc -l' # Start calculator with math support
+
+# Systemd
+alias sys-start='sudo systemctl start'
+alias sys-status='sudo systemctl status'
+alias sys-restart='sudo systemctl restart'
+alias sys-stop='sudo systemctl stop'
+
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".aliases.local" ] && source ".aliases.local"

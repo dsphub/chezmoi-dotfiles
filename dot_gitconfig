@@ -1,0 +1,38 @@
+[alias]
+	aj = add *.java
+	ai = add --interactive
+
+	co = checkout
+
+	c = commit -m
+	ca = commit --amend
+
+	s = status
+
+	d = diff
+
+	p = push
+	l = pull 
+
+	m = merge
+
+	b = branch
+
+	h = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	t = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -n10
+	top = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -n10
+
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+
+	type = cat-file -t
+	dump = cat-file -p
+[user]
+	name = dsp
+	email = dsp.freelancer@gmail.com
+[push]
+    default = matching
+[credential]
+	helper = store
