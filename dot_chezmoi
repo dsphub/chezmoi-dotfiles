@@ -1,0 +1,11 @@
+alias z='chezmoi'
+
+alias zcd='chezmoi cd'
+alias jz='chezmoi cd'
+
+alias za='chezmoi add '
+alias ze='chezmoi edit '
+alias zd='chezmoi diff '
+alias za='chezmoi -v apply '
+alias zu='chezmoi update'
+alias zun='chezmoi unmanaged'
