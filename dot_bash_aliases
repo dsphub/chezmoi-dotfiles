@@ -113,7 +113,7 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-if [ -f ~/.arch_aliases ]; then
+if [ -f ~/.bash_aliases ]; then
     . ~/.aliases
 fi
 
