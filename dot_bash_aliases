@@ -110,17 +110,17 @@ if [ $UID -ne 0 ]; then
 fi
 
 if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+    source ~/.aliases
 fi
 
 if [ -f ~/.arch_aliases ]; then
-    . ~/.arch_aliases
+    source ~/.arch_aliases
 fi
 
 if [ -f ~/.chezmoi_aliases ]; then
-    . ~/.chezmoi_aliases
+    source ~/.chezmoi_aliases
+fi
+
+if [ -f ~/.run_aliases ]; then
+    source ~/.run_aliases
 fi

@@ -1,0 +1,11 @@
+alise rz='zim &> /dev/null&'
+
+alise ras='android-studio &> /dev/null&'
+alise rgl='goland &> /dev/null&'
+alise rgo='goland &> /dev/null&'
+alise rws='webstorm &> /dev/null&'
+alise rwe='webstorm &> /dev/null&'
+alise rrm='rubymine &> /dev/null&'
+alise rru='rubymine &> /dev/null&'
+alise rdg='datagrip &> /dev/null&'
+alise rda='datagrip &> /dev/null&'
