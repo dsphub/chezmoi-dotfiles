@@ -1,6 +1,10 @@
 # Default text editor
 export EDITOR="vim"
 
+# Env
+alias eg='env|grep '
+alias envg='env|grep '
+
 # Edit configs
 alias ebrc='vim ~/.bashrc'
 alias eba='vim .bash_aliases'
@@ -39,6 +43,11 @@ if [ $(uname) == "Linux" ]; then
 	alias update='sudo apt-get update'
 	alias upgrade='sudo apt-get upgrade'
 	alias apt-upgrade="sudo apt-get update && sudo apt-get upgrade"
+	alias agi='sudo apt-get install '
+	alias agr='sudo apt-get remove --purge '
+	alias agp='sudo apt-get purge '
+	alias agu='sudo apt-get update'
+	alias aguu='sudo apt-get update && sudo apt-get upgrade'
 fi
 
 # Copy pwd to clipboard
@@ -51,8 +60,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias j.='cd ~/ws/dotfiles/' # Open dotfiles git repos
+alias j.='cd ~/ws/private-dotfiles/' # Open dotfiles git repos
 alias jws='cd ~/ws' # Open workspace
+alias jn='cd ~/ws/notebook' # Open workspace
 
 mcd () {
     mkdir -p $1
@@ -84,8 +94,6 @@ alias k9='kill -9'
 
 alias jobs='jobs -l'
 
-alias sd='shutdown'
-alias sdc='shutdown -c'
 
 # Network
 alias wtf='ping 8.8.8.8'
@@ -96,5 +104,23 @@ alias ports='netstat -tulanp' # Show open ports
 # check that use is not root
 if [ $UID -ne 0 ]; then
 	# System
+	alias sd='shutdown'
+	alias sdc='shutdown -c'
 	alias reboot='sudo reboot'
+fi
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.arch_aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.arch_aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.chezmoi_aliases ]; then
+    . ~/.aliases
 fi

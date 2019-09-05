@@ -51,12 +51,17 @@ alias gpom='git push origin master'
 alias gpu='git push -u origin master'
 
 alias gl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
+alias glff='git pull --ff-only'
 alias glom='git pull origin master'
+
+alias gm='git merge '
 
 alias gf='git fetch --all'
 alias gfr='git fetch --all && git rebase '
 alias gfro='git fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
 alias gfrom='git fetch --all && git rebase origin/master'
+alias gr='git rebase '
+alias gri='git rebase -i '
 
 alias gdom='git diff origin/master'
 alias grim='git rebase -i master'
