@@ -60,7 +60,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias j.='cd ~/ws/private-dotfiles/' # Open dotfiles git repos
+alias j.='cd ~/ws/dotfiles/' # Open dotfiles git repos
 alias jws='cd ~/ws' # Open workspace
 alias jn='cd ~/ws/notebook' # Open workspace
 
