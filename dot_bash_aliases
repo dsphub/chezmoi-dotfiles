@@ -41,8 +41,7 @@ if [ $(uname) == "Linux" ]; then
 	alias apt-get='sudo apt-get'
 	alias apt-search='apt-get search'
 	alias update='sudo apt-get update'
-	alias upgrade='sudo apt-get upgrade'
-	alias apt-upgrade="sudo apt-get update && sudo apt-get upgrade"
+	alias upgrade="sudo apt-get update && sudo apt-get upgrade"
 	alias agi='sudo apt-get install '
 	alias agr='sudo apt-get remove --purge '
 	alias agp='sudo apt-get purge '
