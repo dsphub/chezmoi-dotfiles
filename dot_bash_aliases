@@ -89,7 +89,8 @@ alias mount='mount |column -t' # Add human readable format
 # System
 alias ps-grep='ps axu|grep ' # e.g. "ps-grep java" will list processes that have java in name or description
 
-alias k9='kill -9'
+alias k9='kill -9 '
+alias ka='killall '
 
 alias jobs='jobs -l'
 
