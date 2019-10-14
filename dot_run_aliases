@@ -1,6 +1,7 @@
 alias rz='zim &> /dev/null&'
 
 alias ras='android-studio &> /dev/null&'
+alias rii='intellij-idea-comminity &> /dev/null&'
 alias rgl='goland &> /dev/null&'
 alias rgo='goland &> /dev/null&'
 alias rws='webstorm &> /dev/null&'
