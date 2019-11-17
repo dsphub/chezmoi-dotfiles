@@ -67,6 +67,7 @@ alias gfro='git fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HE
 alias gfrom='git fetch --all && git rebase origin/master'
 alias gr='git rebase '
 alias gri='git rebase -i '
+alias grc='git rebase --continue'
 
 alias gdom='git diff origin/master'
 alias grim='git rebase -i master'
