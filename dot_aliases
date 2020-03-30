@@ -157,6 +157,16 @@ alias sys-status='sudo systemctl status'
 alias sys-restart='sudo systemctl restart'
 alias sys-stop='sudo systemctl stop'
 
+# Pass
+alias pi='pass insert -m '
+alias pg='pass generate '
+alias pp='pass ls '
+alias pc='pass -c '
+alias pf='pass find '
+alias pcp='pass cp '
+alias pmv='pass mv '
+alias prm='pass rm '
+
 # This should be the last line of the file
 # For local changes
 # Don't make edits below this
