@@ -222,3 +222,16 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
+
+
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
+if [ -f ~/.arch_aliases ]; then
+    source ~/.arch_aliases
+fi
+
+if [ -f ~/.chezmoi_aliases ]; then
+    source ~/.chezmoi_aliases
+fi
