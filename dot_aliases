@@ -113,11 +113,6 @@ alias git-lazy-push='git add . && git commit -m "Update" && git push origin mast
 alias glp=git-lazy-push
 alias glu=git-lazy-push
 
-# Enable tab completion for `g` by marking it as an alias for `git`
-if type _git &> /dev/null; then
-	complete -o default -o nospace -F _git g;
-fi;
-
 # reflog
 alias git-reflog='git reflog --relative-date'
 alias git-reflog-all='git reflog show --all'
