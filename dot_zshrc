@@ -223,15 +223,6 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
     ;;
 esac
 
-
-if [ -f ~/.aliases ]; then
-    source ~/.aliases
-fi
-
-if [ -f ~/.arch_aliases ]; then
-    source ~/.arch_aliases
-fi
-
-if [ -f ~/.chezmoi_aliases ]; then
-    source ~/.chezmoi_aliases
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
 fi
