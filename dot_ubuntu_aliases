@@ -1,0 +1,23 @@
+# Ubuntu specific config
+if [ $(uname) == "Linux" ]; then
+	alias afk=xflock4
+
+	# Apt
+	alias apt-get='sudo apt-get'
+	alias apt-search='apt-get search'
+	alias update='sudo apt-get update'
+	alias upgrade="sudo apt-get update && sudo apt-get upgrade"
+	alias agi='sudo apt-get install '
+	alias agr='sudo apt-get remove --purge '
+	alias agp='sudo apt-get purge '
+	alias agu='sudo apt-get update'
+	alias aguu='sudo apt-get update && sudo apt-get upgrade'
+fi
+
+# check that use is not root
+if [ $UID -ne 0 ]; then
+	# System
+	alias sd='shutdown'
+	alias sdc='shutdown -c'
+	alias reboot='sudo reboot'
+fi
