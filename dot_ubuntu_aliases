@@ -21,3 +21,8 @@ if [ $UID -ne 0 ]; then
 	alias sdc='shutdown -c'
 	alias reboot='sudo reboot'
 fi
+
+# Enable tab completion for `g` by marking it as an alias for `git`
+if type _git &> /dev/null; then
+	complete -o default -o nospace -F _git g;
+fi;
