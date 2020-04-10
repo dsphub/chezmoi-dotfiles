@@ -139,12 +139,16 @@ alias gof='go fmt ./...'
 alias bc='bc -l' # Start calculator with math support
 
 # ADB
-alias ac='./gradlew clean'
-alias aa='./gradlew assembleDebug'
-alias aac='./gradlew assembleDebug --build-cache'
-alias ab='./gradlew buildDebug'
-alias abi='./gradlew installDebug'
-alias au='./gradlew uninstallAll'
+#alias ac='./gradlew clean'
+#alias aa='./gradlew assembleDebug'
+#alias aac='./gradlew assembleDebug --build-cache'
+#alias ab='./gradlew buildDebug'
+#alias abi='./gradlew installDebug'
+#alias au='./gradlew uninstallAll'
+alias wt='./gradlew tasks'
+
+alias ai='~/adbi+'
+alias ad='adb devices'
 
 # Systemd
 alias sys-start='sudo systemctl start'
