@@ -158,6 +158,7 @@ alias sys-stop='sudo systemctl stop'
 
 # Pass
 alias pi='pass insert -m '
+alias pe='pass edit '
 alias pg='pass generate '
 alias pp='pass ls '
 alias pc='pass -c '
