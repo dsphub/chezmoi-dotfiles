@@ -149,6 +149,7 @@ alias wt='./gradlew tasks'
 
 alias ai='~/adbi+'
 alias ad='adb devices'
+alias adb-packages='adb shell pm list packages -3'
 
 # Systemd
 alias sys-start='sudo systemctl start'
