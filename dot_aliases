@@ -151,6 +151,7 @@ alias ai='~/adbi+'
 alias ad='adb devices'
 alias adb-packages='adb shell pm list packages -3'
 alias adb-activities='adb shell dumpsys activity'
+alias adb-running-activities="adb shell dumpsys activity activities | sed -En -e '/Stack #/p' -e '/Running activities/,/Run #0/p'"
 
 # Systemd
 alias sys-start='sudo systemctl start'
