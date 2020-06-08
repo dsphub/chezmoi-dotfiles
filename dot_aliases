@@ -41,7 +41,7 @@ alias gca='git commit --amend'
 alias gcam='git commit --amend -m '
 alias gcan='git commit --amend --no-edit'
 
-alias gcp='git cherry-pick'
+alias gcp='git cherry-pick '
 
 alias gtt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias gt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short -n10"
@@ -162,10 +162,11 @@ alias sys-restart='sudo systemctl restart'
 alias sys-stop='sudo systemctl stop'
 
 # Pass
+alias pp='pass '
 alias pi='pass insert -m '
 alias pe='pass edit '
 alias pg='pass generate '
-alias pp='pass ls '
+alias pls='pass ls '
 alias pc='pass -c '
 alias pf='pass find '
 alias pcp='pass cp '
