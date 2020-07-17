@@ -63,10 +63,10 @@ alias glom='git pull origin master'
 
 alias gm='git merge '
 
-alias gf='git fetch --all'
-alias gfr='git fetch --all && git rebase '
-alias gfro='git fetch --all && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
-alias gfrom='git fetch --all && git rebase origin/master'
+alias gf='git fetch --all --tags'
+alias gfr='git fetch --all --tags && git rebase '
+alias gfro='git fetch --all --tags && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
+alias gfrom='git fetch --all --tags && git rebase origin/master'
 alias gr='git rebase '
 alias gri='git rebase -i '
 alias grc='git rebase --continue'
@@ -151,6 +151,8 @@ alias wt='./gradlew tasks'
 
 alias ai='~/adbi+'
 alias ad='adb devices'
+alias ar='adb uninstall '
+alias ark='adb uninstall -k '
 alias adb-packages='adb shell pm list packages -3'
 alias adb-activities='adb shell dumpsys activity'
 alias adb-running-activities="adb shell dumpsys activity activities | sed -En -e '/Stack #/p' -e '/Running activities/,/Run #0/p'"
