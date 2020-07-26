@@ -152,10 +152,12 @@ alias wt='./gradlew tasks'
 alias ai='~/adbi+'
 alias ad='adb devices'
 alias ar='adb uninstall '
+alias au='adb uninstall '
 alias ark='adb uninstall -k '
 alias adb-packages='adb shell pm list packages -3'
 alias adb-activities='adb shell dumpsys activity'
 alias adb-running-activities="adb shell dumpsys activity activities | sed -En -e '/Stack #/p' -e '/Running activities/,/Run #0/p'"
+alias adb-version '~/Android/Sdk/build-tools/29.0.3/aapt dump badging '
 
 # Systemd
 alias sys-start='sudo systemctl start'
