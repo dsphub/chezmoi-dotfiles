@@ -137,6 +137,10 @@ alias gob='go build ./...'
 alias got='go test ./...'
 alias gof='go fmt ./...'
 
+# Calendar
+alias c3='cal -m3w'
+alias cw='cal -mw'
+
 # Calculator
 alias bc='bc -l' # Start calculator with math support
 
