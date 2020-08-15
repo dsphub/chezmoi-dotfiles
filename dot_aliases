@@ -58,6 +58,7 @@ alias gpom='git push origin master'
 alias gpu='git push -u origin master'
 
 alias gl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
+alias glo='git pull origin '
 alias glff='git pull --ff-only'
 alias glom='git pull origin master'
 
