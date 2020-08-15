@@ -43,13 +43,13 @@ alias gcan='git commit --amend --no-edit'
 
 alias gcp='git cherry-pick '
 
-alias gtt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M"
-alias gt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M -n10"
-alias gt2="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M -n20"
-alias gt3="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M -n30"
-alias gt4="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M -n40"
-alias gtom="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M -n10 master..origin/master"
-alias gto="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:%y-%m-%d %H:%M -n10 $(git rev-parse --abbrev-ref HEAD)..origin/$(git rev-parse --abbrev-ref HEAD)"
+alias gtt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M'"
+alias gt="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M' -n10"
+alias gt2="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M' -n20"
+alias gt3="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M' -n30"
+alias gt4="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M' -n40"
+alias gtom="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M' -n10 master..origin/master"
+alias gto="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format:'%y-%m-%d %H:%M' -n10 $(git rev-parse --abbrev-ref HEAD)..origin/$(git rev-parse --abbrev-ref HEAD)"
 alias gtls='git log --name-only -n10'
 
 alias gp='git push origin $(git rev-parse --abbrev-ref HEAD)'
