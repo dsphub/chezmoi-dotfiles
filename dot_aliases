@@ -154,10 +154,12 @@ alias bc='bc -l' # Start calculator with math support
 #alias au='./gradlew uninstallAll'
 alias wt='./gradlew tasks'
 
-alias ai='~/adbi+'
+alias ai='adb devices | tail -n +2 | cut -sf 1 | xargs -iX adb -s X install -r -d '
+alias ai+='~/adbi+'
 alias ad='adb devices'
 alias ar='adb uninstall '
 alias au='adb uninstall '
+alias au+='adb devices | tail -n +2 | cut -sf 1 | xargs -iX adb -s X uninstall '
 alias ark='adb uninstall -k '
 alias adb-packages='adb shell pm list packages -3'
 alias adb-activities='adb shell dumpsys activity'
