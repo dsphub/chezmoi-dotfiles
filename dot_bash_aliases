@@ -64,7 +64,7 @@ alias df='df -h' # human readable output
 alias dfh='df -h'
 
 alias du='du -h'
-alias duh='du -h|sort -h|head'
+alias duh='du -h|sort -hr|head'
 
 alias lc='wc -l'
 
