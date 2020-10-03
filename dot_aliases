@@ -5,6 +5,7 @@ alias vi='vim'
 
 # Git short
 alias g='git'
+alias g-clone='git clone'
 
 alias gi='git init'
 alias gs='git status'
