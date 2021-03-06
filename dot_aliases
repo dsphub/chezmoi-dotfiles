@@ -103,7 +103,7 @@ alias git-commit-files='git show --pretty="" --name-only'
 alias git-up='cd `git rev-parse --show-toplevel`'
 
 #alias redate=rebase --committer-date-is-author-date
-
+alias gredate='git commit --amend --reset-author'
 alias gfirst='git add . && git commit -m "Initial commit" && git push -u origin master'
 
 alias git-draft='git add . && git commit -m "Update"'
