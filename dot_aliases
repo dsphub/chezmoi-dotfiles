@@ -112,7 +112,8 @@ alias gdraft=git-draft
 alias git-show-draft='git add . && git commit -m "Update" && git show'
 alias gdr='git add . && git commit -m "Update" && git show'
 
-alias git-lazy="git add . && git commit -a -m '$1' && git push -u origin master"
+alias git-todo="git add . && git commit -a -m 'todo'"
+alias git-lazy="git add . && git commit -a -m '$1'"
 alias git-lazy-push='git add . && git commit -m "Update" && git push origin master'
 alias glp=git-lazy-push
 alias glu=git-lazy-push
