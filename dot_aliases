@@ -158,7 +158,6 @@ alias wt='./gradlew tasks'
 
 alias ai='adb devices | tail -n +2 | cut -sf 1 | xargs -iX adb -s X install -r -d'
 alias ai+='~/adbi+'
-alias ad='adb devices'
 alias adl='adb devices -l'
 alias ar='adb uninstall '
 alias au='adb uninstall '
