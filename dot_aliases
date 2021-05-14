@@ -176,6 +176,8 @@ alias ad-unforce='adb shell dumpsys deviceidle unforce'
 alias aip='adb tcpip 5555'
 alias aco='adb connect $1:5555 '
 alias adi='adb disconnect'
+alias adb-pull="adb shell 'cat `pm path $1 | cut -d':' -f2`' > $2"
+alias adb-pull-apk="adb shell 'cat `pm path $1 | cut -d':' -f2`' > app.apk"
 
 # Systemd
 alias sys-start='sudo systemctl start'
