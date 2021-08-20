@@ -180,8 +180,13 @@ alias ad-unforce='adb shell dumpsys deviceidle unforce'
 alias aip='adb tcpip 5555'
 alias aco='adb connect $1:5555 '
 alias adi='adb disconnect'
-alias adb-pull="adb shell 'cat `pm path $1 | cut -d':' -f2`' > $2"
-alias adb-pull-apk="adb shell 'cat `pm path $1 | cut -d':' -f2`' > app.apk"
+#alias adb-pull="adb shell 'cat `pm path $1 | cut -d':' -f2`' > $2"
+#alias adb-pull-apk="adb shell 'cat `pm path $1 | cut -d':' -f2`' > app.apk"
+
+#Error files
+#adb shell dumpsys dropbox
+#Error output
+#adb shell dumpsys dropbox --print
 
 # Tap Home
 # adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
