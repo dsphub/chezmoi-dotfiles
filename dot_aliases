@@ -65,6 +65,10 @@ alias glom='git pull origin master'
 
 alias gm='git merge '
 
+alias gf='git fetch origin'
+alias gfo='git fetch origin'
+alias gfa='git fetch --all'
+alias gft='git fetch --tags'
 alias gf='git fetch --all --tags'
 alias gfr='git fetch --all --tags && git rebase '
 alias gfro='git fetch --all --tags && git rebase origin/$(git rev-parse --abbrev-ref HEAD)'
