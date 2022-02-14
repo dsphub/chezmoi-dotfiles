@@ -35,6 +35,8 @@ alias alg=alias-grep
 
 # Copy pwd to clipboard
 alias cpwd='pwd | xclip -selection clipboard'
+# Copy file to clipboard
+alias cfile='xclip -sel c < '
 
 # File System
 alias ~='cd ~'
