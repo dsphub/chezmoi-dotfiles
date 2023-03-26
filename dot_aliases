@@ -142,6 +142,7 @@ alias dn='docker network'
 # Django
 alias dsh='pipenv shell'
 alias dse='python manage.py runserver'
+alias drs='python backend/manage.py runserver'
 
 # Golang
 alias gob='go build ./...'
