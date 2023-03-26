@@ -139,6 +139,10 @@ alias dm='docker-machin'
 alias dc='docker-compose'
 alias dn='docker network'
 
+# Django
+alias dsh='pipenv shell'
+alias dse='python manage.py runserver'
+
 # Golang
 alias gob='go build ./...'
 alias got='go test ./...'
