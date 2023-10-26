@@ -55,6 +55,7 @@ mcd () {
 }
 alias mkdir='mkdir -pv'
 
+alias l.='ls -d .*'
 alias l='ls -lhF' # show human readable size and add file type indicator (by default "/" for dirs)
 alias lg='ls -lhAF|grep'
 alias la='ls -lhAF'
